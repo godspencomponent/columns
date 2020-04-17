@@ -28,7 +28,9 @@
         :h="componentSize.height"
       >
         <div class="sizeTip">组件显示区域({{componentSize.width}}*{{componentSize.height}})</div>
-        <com v-bind="componentProps" ref="component"></com>
+        <com v-bind="componentProps" ref="component">
+          <div :slot="'slot' + i" v-for="i in 2" :key="i">slot{{i}}</div>
+        </com>
       </vue-drag-resize>
       <div class="block editor" :style="editerStyle">
         <div class="title" @click="editerActive=true" @mousedown="mousedown" @mouseup="mouseup">编辑面板</div>

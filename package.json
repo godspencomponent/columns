@@ -1,7 +1,7 @@
 {
   "name": "columns",
   "label": "多栏布局",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "多栏布局",
   "type": 0,
   "tags": [20],
@@ -14,6 +14,8 @@
     "dist": "npm run build"
   },
   "style": {
+    "width": "100%",
+    "height": "auto"
   },
   "dependencies": {
     "element-ui": "2.4.6",
